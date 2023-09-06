@@ -15,11 +15,13 @@
 
 .ck-content h3 {
     font-size: 12pt;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
 .ck-content h4 {
     font-size: 12pt;
+    font-weight: 400;
     text-transform: capitalize;
 }
 
