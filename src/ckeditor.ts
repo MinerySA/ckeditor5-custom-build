@@ -11,7 +11,7 @@ import { Autosave } from '@ckeditor/ckeditor5-autosave';
 import { Bold, Italic, Subscript, Superscript, Underline } from '@ckeditor/ckeditor5-basic-styles';
 import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
 import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { Heading } from '@ckeditor/ckeditor5-heading';
+import { Heading, HeadingButtonsUI } from '@ckeditor/ckeditor5-heading';
 import {
 	Image,
 	ImageCaption,
@@ -24,7 +24,7 @@ import { Indent, IndentBlock } from '@ckeditor/ckeditor5-indent';
 import { Link } from '@ckeditor/ckeditor5-link';
 import { List, ListProperties } from '@ckeditor/ckeditor5-list';
 import { PageBreak } from '@ckeditor/ckeditor5-page-break';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
+import { Paragraph, ParagraphButtonUI } from '@ckeditor/ckeditor5-paragraph';
 import { PasteFromOffice } from '@ckeditor/ckeditor5-paste-from-office';
 import { ShowBlocks } from '@ckeditor/ckeditor5-show-blocks';
 import { SourceEditing } from '@ckeditor/ckeditor5-source-editing';
@@ -60,6 +60,7 @@ class Editor extends ClassicEditor {
 		Bold,
 		Essentials,
 		Heading,
+		HeadingButtonsUI,
 		Image,
 		ImageCaption,
 		ImageResize,
@@ -74,6 +75,7 @@ class Editor extends ClassicEditor {
 		ListProperties,
 		PageBreak,
 		Paragraph,
+		ParagraphButtonUI,
 		PasteFromOffice,
 		ShowBlocks,
 		SimpleUploadAdapter,
@@ -100,7 +102,10 @@ class Editor extends ClassicEditor {
 	public static override defaultConfig = {
 		toolbar: {
 			items: [
-				'heading',
+				'paragraph',
+				'heading1',
+				'heading2',
+				'heading3',
 				'|',
 				'alignment',
 				'bold',
@@ -144,7 +149,7 @@ class Editor extends ClassicEditor {
 				'tableCellProperties',
 				'tableProperties'
 			]
-		}
+		},
 	};
 }
 
