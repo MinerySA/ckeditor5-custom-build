@@ -3214,7 +3214,8 @@ a.ck.ck-button-bold {
 }
 
 .ck-content .image.image_resized>figcaption {
-    display: block
+    /* Fix para legenda indo para baixo da imagem ao mudar o tamanho dela */
+    /* display: block */
 }
 
 .ck.ck-editor__editable td .image-inline.image_resized img,
