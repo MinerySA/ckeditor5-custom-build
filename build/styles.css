@@ -3206,7 +3206,8 @@ a.ck.ck-button-bold {
 
 .ck-content .image.image_resized {
     box-sizing: border-box;
-    display: block;
+    /* Fix para legenda indo para baixo da imagem ao mudar o tamanho dela */
+    /* display: block; */
     max-width: 100%
 }
 
