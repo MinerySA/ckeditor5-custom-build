@@ -8,18 +8,19 @@
 }
 
 .ck-content h2 {
-    font-size: 16pt;
+    font-size: 12pt;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .ck-content h3 {
-    font-size: 14pt;
-    font-weight: 700;
+    font-size: 12pt;
+    text-transform: uppercase;
 }
 
 .ck-content h4 {
     font-size: 12pt;
-    font-weight: 700;
+    text-transform: capitalize;
 }
 
 .ck-content p {
