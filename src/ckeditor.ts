@@ -19,7 +19,7 @@ import {
 import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
 import { Essentials } from '@ckeditor/ckeditor5-essentials';
 import { FontBackgroundColor, FontColor, FontFamily, FontSize } from '@ckeditor/ckeditor5-font';
-import { Heading } from '@ckeditor/ckeditor5-heading';
+import { Heading, HeadingButtonsUI } from '@ckeditor/ckeditor5-heading';
 import { HorizontalLine } from '@ckeditor/ckeditor5-horizontal-line';
 import {
 	Image,
@@ -34,7 +34,7 @@ import { Link } from '@ckeditor/ckeditor5-link';
 import { List, ListProperties } from '@ckeditor/ckeditor5-list';
 import { MediaEmbed } from '@ckeditor/ckeditor5-media-embed';
 import { PageBreak } from '@ckeditor/ckeditor5-page-break';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
+import { Paragraph, ParagraphButtonUI } from '@ckeditor/ckeditor5-paragraph';
 import { PasteFromOffice } from '@ckeditor/ckeditor5-paste-from-office';
 import { RemoveFormat } from '@ckeditor/ckeditor5-remove-format';
 import { SelectAll } from '@ckeditor/ckeditor5-select-all';
@@ -75,6 +75,7 @@ class Editor extends ClassicEditor {
 		FontFamily,
 		FontSize,
 		Heading,
+		HeadingButtonsUI,
 		HorizontalLine,
 		Image,
 		ImageCaption,
@@ -91,6 +92,7 @@ class Editor extends ClassicEditor {
 		MediaEmbed,
 		PageBreak,
 		Paragraph,
+		ParagraphButtonUI,
 		PasteFromOffice,
 		RemoveFormat,
 		SelectAll,
@@ -119,7 +121,10 @@ class Editor extends ClassicEditor {
 	public static override defaultConfig = {
 		toolbar: {
 			items: [
-				'heading',
+				'paragraph',
+				'heading1',
+				'heading2',
+				'heading3',
 				'|',
 				'alignment',
 				'bold',
